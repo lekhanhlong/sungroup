@@ -1,0 +1,307 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    
+     font-family: Roboto-Black;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Button styling */
+.top-buttons {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    z-index: 10000;
+    display: flex;
+    gap: 10px;
+}
+
+.top-buttons button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #B22222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+}
+.top-buttons ion-icon {
+    margin-right: 8px;
+    font-size: 20px;
+}
+.top-buttons img {
+    width: 24px; /* Kích thước của ảnh */
+    height: 24px; /* Kích thước của ảnh */
+    
+   object-fit: contain;
+}
+.top-buttons a{display: flex; /* Để đảm bảo nội dung bên trong thẻ <a> được căn chỉnh đúng */
+  justify-content: center;
+  align-items: center;
+  
+  text-decoration: none;
+  color: #fff;}
+
+.top-buttons button:hover {
+    background-color: #a955ff;
+}
+
+/* Video and panorama styling */
+.video-container {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.panorama-container {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: top 1s ease-in-out;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Đảm bảo iframe thích ứng với mọi màn hình */
+.panorama-container iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    z-index: 3;
+}
+
+/* Form popup styling */
+.form-popup-new {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10001;
+    background-color: #003366;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 500px;
+}
+
+.form-popup-new h10 {
+    font-size: 19px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-popup-new p {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-popup-new label {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.form-popup-new input,
+.form-popup-new select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 22px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-popup-new input:focus,
+.form-popup-new select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button.btn-new {
+    background-color: #FF3333;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-new:hover {
+    background-color: #0056b3;
+}
+
+button.cancel-new {
+    background-color: #6c757d;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button.cancel-new:hover {
+    background-color: #5a6268;
+}
+
+
+
+
+
+/*
+@media screen and (max-width: 2620px){
+
+
+}
+
+
+
+@media screen and (max-width: 2420px){
+ 
+}
+
+*/
+
+
+
+
+/*
+@media screen and (max-width: 2050px) and (max-height: 1160px) {
+ 
+
+}
+
+
+@media screen and (max-width: 2000px) and (max-height: 900px) {
+
+
+} 
+
+@media screen and (max-width: 1900px) and (max-height: 1100px) {
+
+ 
+}
+
+@media screen and (max-width: 1900px) and (max-height: 850px) {
+ 
+ 
+}*/
+
+
+/*điện thoại*/
+ /*
+@media screen and (max-width: 1380px) and (max-height: 800px) {
+ 
+}*/
+
+
+
+
+
+
+
+/*
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+ 
+}
+*/
+
+@media screen and (max-width: 540px) and (max-height: 720px) {
+ 
+ .form-popup-new h10{font-size: 13px}
+.form-popup-new input, .form-popup-new select{font-size: 13px;
+padding: 7px 4px;margin-bottom: 7px;}
+button.btn-new{font-size: 9px;padding: 7px 4px}
+button.cancel-new {font-size: 9px;padding: 7px 4px}
+
+}
+
+@media screen and (max-width: 433px) and (max-height: 935px) {
+.form-popup-new h10{font-size: 14px}
+.top-buttons button {font-size: 13px;padding: 5px 7px}
+         
+}
+/*
+@media screen and (max-width: 412px) and (max-height: 915px) {
+
+}
+
+
+@media screen and (max-width: 414px) and (max-height: 896px) {
+ 
+}
+*/
+
+
+@media screen and (max-width: 390px) and (max-height: 844px) {
+.top-buttons button {font-size: 11px;padding: 5px 7px}
+.top-buttons ion-icon{font-size: 14px}
+.top-buttons img{width: 18px; height: 18px}
+.form-popup-new h10{font-size: 13px}
+}
+
+
+
+@media screen and (max-width: 375px) and (max-height: 667px) {
+.form-popup-new{width: 79%}
+.form-popup-new h10{font-size: 10px}
+.top-buttons{gap: 3px}
+}
+
+
+
+@media screen and (max-width: 360px) and (max-height: 740px) {
+    .top-buttons{gap: 3px}
+.top-buttons button {font-size: 10px}
+.form-popup-new h10{font-size: 9px}
+.form-popup-new input, .form-popup-new select{font-size: 13px;
+padding: 7px 4px;margin-bottom: 7px;}
+button.btn-new{font-size: 9px;padding: 7px 4px}
+button.cancel-new {font-size: 9px;padding: 7px 4px}
+}
+
+@media screen and (max-width: 320px) and (max-height: 568px) {
+.top-buttons button {font-size: 9px}
+
+}
